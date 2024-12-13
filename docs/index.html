@@ -156,7 +156,40 @@
       <!-- Team Member Card -->
       <div class="group relative overflow-hidden rounded-xl bg-gradient-to-b from-[#0A3366] to-[#072142] p-10 transition-all duration-500 hover:from-[#114485] hover:to-[#082652] hover:scale-[1.02] hover:shadow-lg hover:shadow-[#1E4D8A]/20 max-w-md">
         <div class="flex flex-col items-start text-left">
-          <img src="https://github.com/briege.png" alt="Briege" class="w-32 h-32 rounded-full mb-6 border-4 border-[#2563EB]/20">
+          <svg width="96" height="96" viewBox="0 0 96 96" class="mb-6">
+            <!-- Background circle with gradient -->
+            <defs>
+              <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#2563EB"/>
+                <stop offset="100%" style="stop-color:#1E40AF"/>
+              </linearGradient>
+              <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#60A5FA"/>
+                <stop offset="50%" style="stop-color:#93C5FD"/>
+                <stop offset="100%" style="stop-color:#3B82F6"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Main circular background -->
+            <circle cx="48" cy="48" r="48" fill="url(#avatarGradient)"/>
+            
+            <!-- Abstract geometric pattern -->
+            <path d="M 24,48 L 36,48 L 36,28 L 72,28" 
+                  stroke="url(#highlightGradient)" 
+                  stroke-width="3" 
+                  fill="none"
+                  stroke-linecap="round"/>
+            
+            <path d="M 24,48 L 36,48 L 36,68 L 72,68" 
+                  stroke="url(#highlightGradient)" 
+                  stroke-width="3" 
+                  fill="none"
+                  stroke-linecap="round"/>
+                  
+            <!-- Connection nodes -->
+            <circle cx="24" cy="48" r="4" fill="#D5E3F0"/>
+            <circle cx="72" cy="28" r="4" fill="#D5E3F0"/>
+          </svg>
           <h3 class="text-3xl font-bold text-[#B8CCDF] mb-2">Fernando Meira</h3>
           <p class="text-[#8BA5C9] mb-4 text-lg">Founder</p>
           <p class="text-[#8BA5C9] mb-8 text-base leading-relaxed">Building tools to augment human capabilities and automate the mundane.</p>
