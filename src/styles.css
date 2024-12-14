@@ -6,3 +6,18 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.logo-container {
+  width: 60px; /* Set desired square size */
+  height: 60px;
+  border-radius: 12px; /* Controls corner roundness */
+  background-color: #f0f0f0; /* Background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container svg {
+  width: 40px; /* Size of SVG inside container */
+  height: 40px;
+}
